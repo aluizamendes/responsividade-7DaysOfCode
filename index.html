@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,10 +14,12 @@
 <body>
   <header>
     <div class="container">
-      <div class="profile-container">
+      <div class="profile_container">
         <img src="img/perfil-1.jpg">
-        <h1>Olá, Sônia</h1>
-        <span>Mais 4 consultas hoje</span>
+        <div class="profile_container--text">
+          <h1>Olá, Sônia</h1>
+          <span>Mais 4 consultas hoje</span>
+        </div>
       </div>
     </div>
   </header>
@@ -28,44 +30,66 @@
 
         <div class="card">
           <div class="card_profile">
-            <img src="img/perfil-2.jpg">
-            <h3>Luciana Dias</h3>
-            <img src="img/Camera-icon.svg">
-            <span class="">Consulta remota</span>
-            <img src="img/Chat1-icon.svg">
+            <img class="card_profile--avatar" src="img/perfil-2.jpg">
+            <div class="card_profile--text">
+              <h3>Luciana Dias</h3>
+              <div class="card_profile--tipoConsulta">
+                <img src="img/Camera-icon.svg">
+                <span>Consulta remota</span>
+              </div>
+            </div>
+            <div class="chat_icon">
+              <img src="img/Chat1-icon.svg">
+            </div>
           </div>
-          <hr>
-          <span>14:00 - 15:00 (1 hora)</span>
-          <button>Ligar por vídeo</button>
-          <button>Ligar por áudio</button>
+          <span class="card_time">14:00 - 15:00 (1 hora)</span>
+          <div class="buttons_call">
+            <button class="btn-primary">Ligar por vídeo</button>
+            <button class="btn-outline">Ligar por áudio</button>
+          </div>
         </div>
 
         <div class="card">
           <div class="card_profile">
-            <img src="img/perfil-3.jpg">
-            <h3>Larissa Santana</h3>
-            <img src="img/Camera-icon.svg">
-            <span>Consulta no local</span>
-            <img src="img/Chat1-icon.svg">
+            <img class="card_profile--avatar" src="img/perfil-3.jpg">
+            <div class="card_profile--text">
+              <h3>Larissa Santana</h3>
+              <div class="card_profile--tipoConsulta">
+                <img src="img/Pin-icon.svg">
+                <span>Consulta no local</span>
+              </div>
+            </div>
+            <div class="chat_icon">
+              <img src="img/Chat1-icon.svg">
+            </div>
           </div>
-          <hr>
-          <span>16:00 - 17:00 (1 hora)</span>
-          <button>Ver endereço</button>
+          <span class="card_time">16:00 - 17:00 - (1 hora)</span>
+          <div class="buttons_call">
+            <button class="btn-secondary">Ver endereço</button>
+          </div>
         </div>
 
         <div class="card">
           <div class="card_profile">
-            <img src="img/perfil-4.jpg">
-            <h3>Marcos Correia</h3>
-            <img src="img/Camera-icon.svg">
-            <span>Consulta remota</span>
-            <img src="img/Chat1-icon.svg">
+            <img class="card_profile--avatar" src="img/perfil-4.jpg">
+            <div class="card_profile--text">
+              <h3>Marcos Correia</h3>
+              <div class="card_profile--tipoConsulta">
+                <img src="img/Camera-icon.svg">
+                <span>Consulta remota</span>
+              </div>
+            </div>
+            <div class="chat_icon">
+              <img src="img/Chat1-icon.svg">
+            </div>
           </div>
-          <hr>
-          <span>17:20 - 18:00 (40 minutos)</span>
-          <button>Ligar por vídeo</button>
-          <button>Ligar por áudio</button>
+          <span class="card_time">17:20 - 18:00 (40 minutos)</span>
+          <div class="buttons_call">
+            <button class="btn-primary">Ligar por vídeo</button>
+            <button class="btn-outline">Ligar por áudio</button>
+          </div>
         </div>
+
 
       </section>
       <section>
@@ -73,57 +97,86 @@
 
         <div class="card">
           <div class="card_profile">
-            <img src="img/perfil-5.jpg">
-            <h3>Clara Lemos</h3>
-            <img src="img/Camera-icon.svg">
-            <span>Consulta no local</span>
-            <img src="img/Chat1-icon.svg">
+            <img class="card_profile--avatar" src="img/perfil-5.jpg">
+            <div class="card_profile--text">
+              <h3>Clara Lemos</h3>
+              <div class="card_profile--tipoConsulta">
+                <img src="img/Pin-icon.svg">
+                <span>Consulta no local</span>
+              </div>
+            </div>
+            <div class="chat_icon">
+              <img src="img/Chat1-icon.svg">
+            </div>
           </div>
-          <hr>
-          <span>18:00 - 19:00 - (1 hora)</span>
-          <button>Ver endereço</button>
+          <span class="card_time">18:00 - 19:00 - (1 hora)</span>
+          <div class="buttons_call">
+            <button class="btn-secondary">Ver endereço</button>
+          </div>
         </div>
 
         <div class="card">
           <div class="card_profile">
-            <img src="img/perfil-2.jpg">
-            <h3>Luciana Dias</h3>
-            <img src="img/Camera-icon.svg">
-            <span>Consulta remota</span>
-            <img src="img/Chat1-icon.svg">
+            <img class="card_profile--avatar" src="img/perfil-2.jpg">
+            <div class="card_profile--text">
+              <h3>Luciana Dias</h3>
+              <div class="card_profile--tipoConsulta">
+                <img src="img/Camera-icon.svg">
+                <span>Consulta remota</span>
+              </div>
+            </div>
+            <div class="chat_icon">
+              <img src="img/Chat1-icon.svg">
+            </div>
           </div>
-          <hr>
-          <span>14:00 - 15:00 (1 hora)</span>
-          <button>Ligar por vídeo</button>
-          <button>Ligar por áudio</button>
+          <span class="card_time">14:00 - 15:00 (1 hora)</span>
+          <div class="buttons_call">
+            <button class="btn-primary">Ligar por vídeo</button>
+            <button class="btn-outline">Ligar por áudio</button>
+          </div>
         </div>
 
         <div class="card">
           <div class="card_profile">
-            <img src="img/perfil-4.jpg">
-            <h3>Marcos Correia</h3>
-            <img src="img/Camera-icon.svg">
-            <span>Consulta remota</span>
-            <img src="img/Chat1-icon.svg">
+            <img class="card_profile--avatar" src="img/perfil-4.jpg">
+            <div class="card_profile--text">
+              <h3>Marcos Correia</h3>
+              <div class="card_profile--tipoConsulta">
+                <img src="img/Camera-icon.svg">
+                <span>Consulta remota</span>
+              </div>
+            </div>
+            <div class="chat_icon">
+              <img src="img/Chat1-icon.svg">
+            </div>
           </div>
-          <hr>
-          <span>17:20 - 18:00 (40 minutos)</span>
-          <button>Ligar por vídeo</button>
-          <button>Ligar por áudio</button>
+          <span class="card_time">17:20 - 18:00 (40 minutos)</span>
+          <div class="buttons_call">
+            <button class="btn-primary">Ligar por vídeo</button>
+            <button class="btn-outline">Ligar por áudio</button>
+          </div>
         </div>
 
         <div class="card">
           <div class="card_profile">
-            <img src="img/perfil-3.jpg">
-            <h3>Larissa Santana</h3>
-            <img src="img/Camera-icon.svg">
-            <span>Consulta no local</span>
-            <img src="img/Chat1-icon.svg">
+            <img class="card_profile--avatar" src="img/perfil-3.jpg">
+            <div class="card_profile--text">
+              <h3>Larissa Santana</h3>
+              <div class="card_profile--tipoConsulta">
+                <img src="img/Pin-icon.svg">
+                <span>Consulta no local</span>
+              </div>
+            </div>
+            <div class="chat_icon">
+              <img src="img/Chat1-icon.svg">
+            </div>
           </div>
-          <hr>
-          <span>16:00 - 17:00 (1 hora)</span>
-          <button>Ver endereço</button>
+          <span class="card_time">16:00 - 17:00 - (1 hora)</span>
+          <div class="buttons_call">
+            <button class="btn-secondary">Ver endereço</button>
+          </div>
         </div>
+
 
       </section>
       <section>
@@ -131,57 +184,86 @@
 
         <div class="card">
           <div class="card_profile">
-            <img src="img/perfil-5.jpg">
-            <h3>Clara Lemos</h3>
-            <img src="img/Camera-icon.svg">
-            <span>Consulta no local</span>
-            <img src="img/Chat1-icon.svg">
+            <img class="card_profile--avatar" src="img/perfil-5.jpg">
+            <div class="card_profile--text">
+              <h3>Clara Lemos</h3>
+              <div class="card_profile--tipoConsulta">
+                <img src="img/Pin-icon.svg">
+                <span>Consulta no local</span>
+              </div>
+            </div>
+            <div class="chat_icon">
+              <img src="img/Chat1-icon.svg">
+            </div>
           </div>
-          <hr>
-          <span>18:00 - 19:00 - (1 hora)</span>
-          <button>Ver endereço</button>
+          <span class="card_time">18:00 - 19:00 - (1 hora)</span>
+          <div class="buttons_call">
+            <button class="btn-secondary">Ver endereço</button>
+          </div>
         </div>
 
         <div class="card">
           <div class="card_profile">
-            <img src="img/perfil-2.jpg">
-            <h3>Luciana Dias</h3>
-            <img src="img/Camera-icon.svg">
-            <span>Consulta remota</span>
-            <img src="img/Chat1-icon.svg">
+            <img class="card_profile--avatar" src="img/perfil-2.jpg">
+            <div class="card_profile--text">
+              <h3>Luciana Dias</h3>
+              <div class="card_profile--tipoConsulta">
+                <img src="img/Camera-icon.svg">
+                <span>Consulta remota</span>
+              </div>
+            </div>
+            <div class="chat_icon">
+              <img src="img/Chat1-icon.svg">
+            </div>
           </div>
-          <hr>
-          <span>14:00 - 15:00 (1 hora)</span>
-          <button>Ligar por vídeo</button>
-          <button>Ligar por áudio</button>
+          <span class="card_time">14:00 - 15:00 (1 hora)</span>
+          <div class="buttons_call">
+            <button class="btn-primary">Ligar por vídeo</button>
+            <button class="btn-outline">Ligar por áudio</button>
+          </div>
         </div>
 
         <div class="card">
           <div class="card_profile">
-            <img src="img/perfil-4.jpg">
-            <h3>Marcos Correia</h3>
-            <img src="img/Camera-icon.svg">
-            <span>Consulta remota</span>
-            <img src="img/Chat1-icon.svg">
+            <img class="card_profile--avatar" src="img/perfil-4.jpg">
+            <div class="card_profile--text">
+              <h3>Marcos Correia</h3>
+              <div class="card_profile--tipoConsulta">
+                <img src="img/Camera-icon.svg">
+                <span>Consulta remota</span>
+              </div>
+            </div>
+            <div class="chat_icon">
+              <img src="img/Chat1-icon.svg">
+            </div>
           </div>
-          <hr>
-          <span>17:20 - 18:00 (40 minutos)</span>
-          <button>Ligar por vídeo</button>
-          <button>Ligar por áudio</button>
+          <span class="card_time">17:20 - 18:00 (40 minutos)</span>
+          <div class="buttons_call">
+            <button class="btn-primary">Ligar por vídeo</button>
+            <button class="btn-outline">Ligar por áudio</button>
+          </div>
         </div>
 
         <div class="card">
           <div class="card_profile">
-            <img src="img/perfil-3.jpg">
-            <h3>Larissa Santana</h3>
-            <img src="img/Camera-icon.svg">
-            <span>Consulta no local</span>
-            <img src="img/Chat1-icon.svg">
+            <img class="card_profile--avatar" src="img/perfil-3.jpg">
+            <div class="card_profile--text">
+              <h3>Larissa Santana</h3>
+              <div class="card_profile--tipoConsulta">
+                <img src="img/Pin-icon.svg">
+                <span>Consulta no local</span>
+              </div>
+            </div>
+            <div class="chat_icon">
+              <img src="img/Chat1-icon.svg">
+            </div>
           </div>
-          <hr>
-          <span>16:00 - 17:00 (1 hora)</span>
-          <button>Ver endereço</button>
+          <span class="card_time">16:00 - 17:00 - (1 hora)</span>
+          <div class="buttons_call">
+            <button class="btn-secondary">Ver endereço</button>
+          </div>
         </div>
+
 
       </section>
     </div>

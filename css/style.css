@@ -6,10 +6,165 @@
   --primaryBlue: #4894FF;
   --primaryOrange: #FFB050;
   --primaryBlueShadow: box-shadow: 0px 4px 16px 0px #4894FF29;
-  --primaryOrangeShadow: box-shadow: 0px 4px 16px 0px #FFB05029;
+  --primaryOrangeShadow: box-shadow: 0px 4px 16px #FFB050;
 
   --darkBlack: #464646;
   --copyText: #A3A3A3;
   --lightGray: #F6F6F6;
-  --surfaces: #F7FAFE;
+  --surfaces: #f4f6fc;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--surfaces);
+}
+
+.container {
+	margin-inline: auto;
+	width: min(90%,100rem);
+}
+
+header {
+  padding-top: 3.2rem;
+  padding-bottom: 2.4rem;
+}
+
+header .profile_container img {
+  width: 6.4rem;
+  clip-path: circle(50% at 50% 50%); /* Foto redonda do perfil */
+}
+
+.profile_container {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.profile_container h1 {
+  color: var(--darkBlack);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+}
+
+.profile_container span {
+  color: var(--copyText);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.6rem 0;
+  color: var(--darkBlack);
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.6rem 2rem;
+  border-radius: .8rem;
+  margin-bottom: 2.4rem;
+}
+
+.card_profile .card_profile--avatar {
+  width: 4rem;
+  height: 4rem;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.card_profile {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding-bottom: 1.6rem;
+  border-bottom: .2rem solid var(--lightGray);
+}
+
+.card_profile--text {
+  flex-grow: 1;
+}
+
+.card_profile--text h3 {
+  color: var(--darkBlack);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+.card_profile--text span {
+  color: var(--copyText);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+.card_profile--tipoConsulta {
+  display: flex;
+  gap: .8rem;
+}
+
+.chat_icon {
+  background-color: var(--lightGray);
+  margin-bottom: auto;
+  padding: .9rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card_time {
+  color: var(--darkBlack);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: block;
+  padding: 1.6rem 0;
+}
+
+.buttons_call {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-primary {
+  background-color: var(--primaryOrange);
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: none;
+  border-radius: .8rem;
+  padding: 1.2rem 2rem;
+  box-shadow: 0px 4px 16px 0px #ffb0505b;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: var(--primaryBlue);
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: none;
+  border-radius: .8rem;
+  padding: 1.2rem 2.4rem;
+  width: 100%;
+  box-shadow: 0px 4px 16px 0px #4894ff5a;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--darkBlack);
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: .1rem solid #ECECEC;
+  border-radius: .8rem;
+  padding: 1.2rem 2rem;
+  cursor: pointer;
 }
