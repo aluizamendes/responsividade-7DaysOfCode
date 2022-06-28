@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryBlue: #4894FF;
+  --primaryOrange: #FFB050;
+  --primaryBlueShadow: box-shadow: 0px 4px 16px 0px #4894FF29;
+  --primaryOrangeShadow: box-shadow: 0px 4px 16px 0px #FFB05029;
+
+  --darkBlack: #464646;
+  --copyText: #A3A3A3;
+  --lightGray: #F6F6F6;
+  --surfaces: #F7FAFE;
+}
