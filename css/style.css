@@ -20,12 +20,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   background-color: var(--surfaces);
-  position: relative;
 }
 
 .container {
 	margin-inline: auto;
 	width: min(90%,100rem);
+  position: relative;
 }
 
 header {
@@ -127,6 +127,7 @@ h2 {
 .buttons_call {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .btn-primary {
@@ -170,14 +171,14 @@ h2 {
 
 /* ----- Menu ----- */
 nav {
-  padding: 2.6rem 0;
+  padding: 2.4rem 0;
   background-color: #fff;
   box-shadow: 0px -4px 8px 0px #0000000F;
   border-radius: 1.2rem 1.2rem 0rem 0rem;
   position: fixed;
   width: 100%;
   z-index: 10;
-  top: 91vh;
+  bottom: 0;
 }
 
 .nav_links {
@@ -206,4 +207,23 @@ nav {
   align-items: center;
   justify-content: space-between;
   gap: .6rem;
+}
+
+.btn-maisOpcoes {
+  color: #fff;
+  font-size: 3.2rem;
+  background-color: var(--primaryBlue);
+  height: 5.4rem;
+  width: 5.4rem;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 4px 16px 0px #4894ff5a;
+  position: absolute;
+  z-index: 9999;
+  right: 0;
+  bottom: 8rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
