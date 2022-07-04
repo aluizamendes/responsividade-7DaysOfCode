@@ -4,7 +4,9 @@
 
 :root {
   --primaryBlue: #4894FF;
+  --lightBlue: #67a4f9;
   --primaryOrange: #FFB050;
+  --lightOrange: #fbb866;
 
   --darkBlack: #464646;
   --copyText: #A3A3A3;
@@ -20,6 +22,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   background-color: var(--surfaces);
+  padding-bottom: 12rem;
 }
 
 .container {
@@ -204,9 +207,10 @@ nav {
 
 .nav_links a:hover {
   color: var(--primaryBlue);
+  font-weight: 600;
 }
 
-.menu_item {
+.menu_item a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -241,7 +245,45 @@ nav {
 }
 
 @media (min-width: 1100px) {
+  body {
+    padding-left: 18rem;
+  }
+
   section {
     grid-template-columns: 1fr 1fr 1fr;
   }  
+
+  nav {
+    width: 18rem;
+    height: 100%;
+    border-radius: 0; 
+    padding: 2.4rem;
+    left: 0;
+  }
+
+  .nav_links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu_item {
+    margin-bottom: 2.4rem;
+  }
+
+  .menu_item a {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .menu_item a img {
+    width: 2rem;
+  }
+
+  .btn-maisOpcoes {
+    display: none;
+  }
 }
