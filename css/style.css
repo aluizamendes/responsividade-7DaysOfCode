@@ -4,9 +4,9 @@
 
 :root {
   --primaryBlue: #4894FF;
-  --lightBlue: #67a4f9;
+  --lightBlue: #6ea8f9;
   --primaryOrange: #FFB050;
-  --lightOrange: #fbb866;
+  --lightOrange: #febc6c;
 
   --darkBlack: #464646;
   --copyText: #A3A3A3;
@@ -149,6 +149,11 @@ section {
   padding: 1.2rem 2rem;
   box-shadow: 0px 4px 16px 0px #ffb0505b;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--lightOrange);
 }
 
 .btn-secondary {
@@ -163,6 +168,11 @@ section {
   width: 100%;
   box-shadow: 0px 4px 16px 0px #4894ff5a;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--lightBlue);
 }
 
 .btn-outline {
@@ -307,6 +317,12 @@ form {
   display: block;
   margin-left: auto;
   cursor: pointer;  
+  transition: all 0.4s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--primaryBlue);
+  color: #fff;
 }
 
 footer p {
