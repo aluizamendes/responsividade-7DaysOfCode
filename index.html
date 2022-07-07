@@ -19,7 +19,7 @@
       </button>
       <div class="nav_links">
         <div class="menu_item">          
-          <a href="index.html"><img src="img/calendario-icon.svg">Consultas</a>
+          <a href="index.html" style="color: #4894FF;"><img src="img/calendario-icon.svg">Consultas</a>
         </div>
         <div class="menu_item">          
           <a href="#"><img src="img/clientes-icon.svg">Clientes</a>
@@ -288,6 +288,47 @@
         </div>
 
       </section>
+
+      <h2 class="titulo-form">Cadastrar nova consulta</h2>
+
+      <form>
+        <div class="input-field">
+          <label for="nome">Nome do paciente</label>
+          <input type="text" name="nome" id="">
+        </div>
+
+        <div class="input-field">
+          <label for="data">Data da consulta</label>
+          <input type="date" name="data" id="">
+        </div>
+
+        <div class="input-field">
+          <label for="horario">Hora da consulta</label>
+          <input type="time" name="horario">
+        </div>
+
+        <div class="input-field">
+          <label>Tipo de consulta</label>
+
+          <div class="radio_options">
+            <div class="radio_type">
+              <input type="radio" name="tipo" value="local"><label for="local">No local</label>
+            </div>
+
+            <div class="radio_type">
+              <input type="radio" name="tipo" value="remoto"><label for="local">Remoto</label>
+            </div>
+          </div>
+        </div>     
+
+        <div class="input-field">
+          <label for="observacoes">Observações</label>
+          <textarea name="observacoes" id="observacoes" cols="30" rows="05"></textarea>
+        </div>
+      </form>
+
+      <button type="submit" class="btn-submit">Cadastrar consulta</button>
+      
     </div>
   </main>
   
