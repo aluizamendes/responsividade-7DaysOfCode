@@ -9,9 +9,9 @@ Desenvolvimento de uma página web Responsividade usando o conceito de Mobile Fi
 
 ## Versão mobile
 
-![Preview mobile](https://github.com/aluizamendes/responsividade-7DaysOfCode/blob/main/img/respondividade-7doc-mobile.png)
-
-![Preview mobile](https://github.com/aluizamendes/responsividade-7DaysOfCode/blob/main/img/respondividade-7doc-mobile2.png)
-
-![Preview mobile](https://github.com/aluizamendes/responsividade-7DaysOfCode/blob/main/img/respondividade-7doc-mobile3.png)
+<p float="left">
+  <img src="img/responsividade-7doc-mobile.png" width="32%" />
+  <img src="img/responsividade-7doc-mobile2.png" width="32%" /> 
+  <img src="img/responsividade-7doc-mobile3.png" width="32%" />
+</p>
 
