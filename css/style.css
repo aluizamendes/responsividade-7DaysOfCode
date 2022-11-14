@@ -404,6 +404,10 @@ footer p a {
   text-decoration: none;
 }
 
+.area-1, .area-2, .area-3, .area-4 {
+  visibility: hidden;
+}
+
 /* ----- Media queries ----- */
 @media (min-width: 700px) {
   section {
